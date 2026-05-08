@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTrade Portal - Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 style="text-align: center;">PrimeTrade Portal</h2>
+            <hr>
+            <div id="auth-form">
+                <input type="text" id="username" placeholder="Full Name (For Register)">
+                <input type="email" id="email" placeholder="Email Address">
+                <input type="password" id="password" placeholder="Password">
+                
+                <label for="role">Select Role:</label>
+                <select id="role">
+                    <option value="user">Standard User</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button onclick="register()" style="flex: 1; background: #6c757d; color: white;">Register</button>
+                    <button onclick="login()" style="flex: 1; background: #007bff; color: white;">Login</button>
+                </div>
+            </div>
+            <p id="message" style="text-align: center; color: red; margin-top: 10px;"></p>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

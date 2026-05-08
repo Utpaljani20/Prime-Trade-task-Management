@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTrade - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="margin: 0;">Dashboard</h2>
+                <button onclick="logout()" class="btn-danger" style="width: auto;">Logout</button>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+            
+            <h3>Add New Task</h3>
+            <input type="text" id="taskTitle" placeholder="What needs to be done?">
+            <input type="text" id="taskDesc" placeholder="Any details?">
+            <button onclick="addTask()" class="btn-primary">Add Task</button>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <h3>Your Task List</h3>
+            <div id="taskList">
+                </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+    <script>
+        // Page load hote hi tasks dikhne chahiye
+        window.onload = loadTasks;
+    </script>
+</body>
+</html>
