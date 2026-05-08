@@ -1,0 +1,42 @@
+{
+	"info": {
+		"name": "PrimeTrade Task Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"url": "http://127.0.0.1:5000/auth/register",
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"testuser\", \"password\": \"testpassword\"}",
+					"options": {"raw": {"language": "json"}}
+				}
+			}
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"url": "http://127.0.0.1:5000/auth/login",
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"testuser\", \"password\": \"testpassword\"}",
+					"options": {"raw": {"language": "json"}}
+				}
+			}
+		},
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{ "key": "Authorization", "value": "Bearer <YOUR_JWT_TOKEN>" }
+				],
+				"url": "http://127.0.0.1:5000/tasks"
+			}
+		}
+	]
+}
