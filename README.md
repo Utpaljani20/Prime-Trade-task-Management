@@ -10,14 +10,14 @@ Component  Technology
 **Database** SQLite (Production-ready for PostgreSQL) 
 **Frontend**  Vanilla JavaScript (ES6+), HTML5, CSS3 (Modern UI) 
 
-## SQLite-"Development uses SQLite for ease of evaluation. However, the project is built with SQLAlchemy ORM, making it fully compatible with PostgreSQL/MySQL for production scaling."
+SQLite-"Development uses SQLite for ease of evaluation. However, the project is built with SQLAlchemy ORM, making it fully compatible with PostgreSQL/MySQL for production scaling."
 
 ## Project WalkThrough
 ### 1. Secure Authentication
-![Login/Register Page](static/image/image1.png) 
+![Login/Register Page](static/images/image1.png) 
 
 ### 2. Interactive Dashboard
-![Dashboard Page](static/image/image.png)
+![Dashboard Page](static/images/image.png)
 
 
 
